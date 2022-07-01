@@ -12,9 +12,22 @@
         margin: 0 auto;
         text-align: center;
 
-        p{
+        p {
             font-size: 1.4rem;
             color: #B8B8B8;
         }
+    }
+}
+
+.projects-wrapper {
+    width: 100%;
+    background-color: #212121;
+
+    .projects-container {
+        max-width: 1150px;
+        margin: 0 auto;
+        width: 100%;
+
+        .img-container {}
     }
 }
