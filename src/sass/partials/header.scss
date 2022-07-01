@@ -11,11 +11,19 @@
 		max-width: 1368px;
 		display: flex;
 		align-content: center;
-		justify-content: space-between;
+		justify-content: center;
+
+		@include breakpoint(medium){
+			justify-content: space-between;
+		}
 
 		.contacts {
-			display: flex;
-			align-items: center;
+			display: none;
+
+			@include breakpoint(medium) {
+				display: flex;
+				align-items: center;
+			}
 
 			ul {
 				padding: 0;
@@ -45,14 +53,19 @@
 
 			p {
 				margin: 0;
-				font-size: 2.3rem;
+				font-size: 1.7rem;
 				font-weight: 600;
 				color: #ffffff;
 			}
 		}
 
 		.social {
-			display: flex;
+			display: none;
+
+			@include breakpoint(medium) {
+				display: flex;
+				align-items: center;
+			}
 
 			a {
 				padding: 1rem;

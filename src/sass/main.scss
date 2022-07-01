@@ -4,15 +4,19 @@
 /* ==========  Variables, Mixins, Fonts  ========== */
 @import "configs/vars";
 @import "configs/fonts";
+@import "configs/breakpoints";
 
 /* ==========  Global  ========== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
-html, body {
+html,
+body {
 	width: 100%;
 	min-height: 100vh;
 	min-width: 320px;
@@ -22,32 +26,65 @@ html, body {
 body {
 	display: flex;
 	flex-direction: column;
-	font-family: $font;
+	font-family: acumin-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	font-size: 1.4rem;
-	font-weight: $font-normal;
 	line-height: 1.6;
 	position: relative;
 	overflow-x: hidden;
 	color: $color-text;
 	background-color: $color-body;
+
 	@media (max-width: 768px) {
 		line-height: 1.2;
 	}
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font: inherit;
 	font-weight: $font-bold;
 	line-height: 1.2;
 	margin: 0 0 1em 0;
 	color: $color-heading;
 }
-h1 {font-size: 2.8em;}
-h2 {font-size: 2.2em;}
-h3 {font-size: 1.6em;}
-h4 {font-size: 1.4em;}
-h5 {font-size: 1.2em;}
-h6 {font-size: 1em;}
+
+h1 {
+	font-size: 2.5rem;
+	color: #ffffff;
+	opacity: .9;
+	margin: 0 0 3rem 0;
+
+	@include breakpoint(medium) {
+		font-size: 7rem;
+
+	}
+}
+
+h2 {
+	font-size: 2.2em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6 {
+	font-size: 1em;
+}
 
 p {
 	margin: 0 0 1em 0;
@@ -56,14 +93,17 @@ p {
 a {
 	text-decoration: none;
 	color: #FFFFFF;
-	
+
 }
 
-b, strong {
+b,
+strong {
 	font-weight: $font-bold;
 }
 
-img, svg, picture {
+img,
+svg,
+picture {
 	max-width: 100%;
 }
 
@@ -81,10 +121,12 @@ blockquote {
 	font-style: italic;
 }
 
-ul, ol {
+ul,
+ol {
 	margin: 0 0 1em 0;
 	padding-left: 1.3em;
 }
+
 ul li::marker {
 	color: $color-text-light;
 }
@@ -95,29 +137,37 @@ table {
 	border-spacing: 0;
 	margin: 0 0 1em 0;
 	text-align: left;
-	th, td {
+
+	th,
+	td {
 		padding: 0.75em;
 	}
+
 	th {
 		font-weight: $font-bold;
 		color: $color-heading;
 	}
+
 	thead th,
 	thead td {
 		border-bottom: 2px solid darken($color-box, 7%);
 	}
+
 	tbody th,
 	tbody td {
 		border-top: 1px solid darken($color-box, 7%);
 		border-bottom: 1px solid darken($color-box, 7%);
 	}
+
 	tbody tr:nth-child(2n + 1) th,
 	tbody tr:nth-child(2n + 1) td {
 		background-color: $color-box;
+
 		input {
 			background-color: $color-body;
 		}
 	}
+
 	tfoot th,
 	tfoot td {
 		border-top: 2px solid darken($color-box, 7%);
@@ -155,13 +205,8 @@ hr {
 .container {
 	display: block;
 	width: 100%;
-	max-width: 100em;
 	margin: 0 auto;
-	padding: 0 4em;
 	position: relative;
-	@media (max-width: 575px) {
-		padding: 0 2em;
-	}
 }
 
 .page-content {
@@ -171,36 +216,47 @@ hr {
 .section {
 	display: block;
 	width: 100%;
+
 	&__title {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
+
 	&__content {
 		display: block;
 		width: 100%;
 		margin: 0 0 2em 0;
+
 		*:last-child {
 			margin-bottom: 0;
 		}
 	}
+
 	&__footer {
 		display: block;
 		width: 100%;
 		margin: 2em 0 0 0;
 	}
+
 	&_offset {
 		padding: 4em 0;
 	}
+
 	&_offset-top {
 		padding-top: 4em;
 	}
+
 	&_offset-bottom {
 		padding-bottom: 4em;
 	}
+
 	&_primary {
 		background-color: $color-primary;
-		* {color: #fff}
+
+		* {
+			color: #fff
+		}
 	}
 }
 
@@ -209,6 +265,7 @@ hr {
 	width: 5.5em;
 	height: 2em;
 	position: relative;
+
 	span {
 		position: absolute;
 		width: 1em;
@@ -216,40 +273,50 @@ hr {
 		border-radius: 50%;
 		background-color: $color-primary;
 		animation: loader_anim 1s infinite ease-in-out;
+
 		&:nth-child(1) {
 			left: 0;
 		}
+
 		&:nth-child(2) {
 			left: 1.5em;
 			animation-delay: 0.1s;
 		}
+
 		&:nth-child(3) {
 			left: 3em;
 			animation-delay: 0.2s;
 		}
+
 		&:nth-child(4) {
 			left: 4.5em;
 			animation-delay: 0.3s;
 		}
 	}
 }
+
 .btn .loader {
 	width: 3.5em;
 	height: 1em;
+
 	span {
 		width: 0.5em;
 		height: 0.5em;
 		background-color: #fff;
 		animation-name: loader_anim_btn;
+
 		&:nth-child(1) {
 			left: 0;
 		}
+
 		&:nth-child(2) {
 			left: 1em;
 		}
+
 		&:nth-child(3) {
 			left: 2em;
 		}
+
 		&:nth-child(4) {
 			left: 3em;
 		}
@@ -263,9 +330,13 @@ hr {
 	border-radius: $brs;
 	background-color: $color-box;
 	position: relative;
+
 	&_primary {
 		background-color: $color-primary;
-		* {color: #fff}
+
+		* {
+			color: #fff
+		}
 	}
 }
 
@@ -281,22 +352,27 @@ hr {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
+
 	&.primary {
 		color: #fff;
 		background-color: $color-primary;
 	}
+
 	&.success {
 		color: #fff;
 		background-color: $color-success;
 	}
+
 	&.info {
 		color: #fff;
 		background-color: $color-info;
 	}
+
 	&.warning {
 		color: #fff;
 		background-color: $color-warning;
 	}
+
 	&.error {
 		color: #fff;
 		background-color: $color-error;
@@ -308,6 +384,7 @@ hr {
 @import "partials/form";
 @import "partials/grid";
 @import "partials/toasts";
+@import "partials/home";
 
 @import "partials/header";
 @import "partials/footer";
