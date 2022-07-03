@@ -11,11 +11,21 @@
 
     .arrow {
         position: absolute;
-        left: 40%;
+        left: 43%;
         top: 70%;
 
+        @include breakpoint(medium) {
+            top: 83%;
+            left: 47.2%;
+        }
+
+        @include breakpoint(large) {
+            top: 83%;
+            left: 48.2% !important;
+        }
+
         img {
-            width: 8rem;
+            width: 5rem;
             height: 3rem;
         }
     }
@@ -31,6 +41,10 @@
         p {
             font-size: 1.7rem;
             color: #B8B8B8;
+
+            @include breakpoint(medium) {
+                font-size: 2rem;
+            }
         }
     }
 }
