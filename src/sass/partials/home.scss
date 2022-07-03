@@ -9,13 +9,16 @@
     position: fixed;
     z-index: -99;
 
-    .arrow{
-        padding-top: 5rem;
-            img{
-                width: 8rem;
-                height: 3rem;
-            } 
+    .arrow {
+        position: absolute;
+        left: 40%;
+        top: 70%;
+
+        img {
+            width: 8rem;
+            height: 3rem;
         }
+    }
 
     .name-about {
         width: 100%;
@@ -23,7 +26,7 @@
         margin: 0 auto;
         text-align: center;
 
-        
+
 
         p {
             font-size: 1.7rem;
@@ -50,7 +53,8 @@
 
         .img-container {
             margin: 1rem auto;
-            .img-text{
+
+            .img-text {
                 display: flex;
                 align-content: center;
                 flex-direction: column;
