@@ -67,7 +67,7 @@
 
 			@include breakpoint(medium) {
 				display: flex;
-				align-items: center;
+				align-content: center;
 			}
 
 			a {
