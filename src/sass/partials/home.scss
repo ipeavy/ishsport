@@ -1,13 +1,15 @@
 .name-container {
     width: 100%;
     overflow: hidden;
-    height: 90vh;
+    height: 84vh;
     background-color: #1F1F1F;
     color: #ffffff;
     display: flex;
     align-items: center;
     position: fixed;
     z-index: -99;
+    padding: 0 .112rem;
+   
 
     .arrow {
         position: absolute;
@@ -65,12 +67,48 @@
         margin: 0 auto;
         width: 100%;
 
-        .col{
+        .arrow-up {
+            position: fixed;
+            z-index: 99;
+            right: 2rem;
+            
+
+            .arrowUp {
+                background-color: #ffffff;
+                border-radius: 50%;
+                width: 6rem;
+                height: 6rem;
+                opacity: .6;
+                align-items: center;
+                display: flex;
+
+                &:hover {
+                    opacity: .1;
+                }
+
+                img{
+                    margin: 0 auto;
+                }
+                
+            }
+        }
+
+        .col {
             padding: .2em;
         }
 
         .img-container {
             margin: 1rem auto;
+
+            img {
+
+                transition: all ease-in-out 450ms;
+
+                &:hover {
+                    background-color: #000000;
+                    opacity: .5;
+                }
+            }
 
             .img-text {
                 display: flex;
@@ -85,7 +123,7 @@
                     width: 300px;
                     margin: auto;
 
-                    p{
+                    p {
                         margin: 0;
                     }
                 }

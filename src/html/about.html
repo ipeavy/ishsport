@@ -1,18 +1,44 @@
 @@include("partials/header.html")
 <div class="wrapper">
-    <div class="name-container">
+    <div class="name-container about">
         <div class="name-about">
             <h1>About / Contact</h1>
             <p>I'm a HTML Email Developer based in Providence, RI</p>
-            <div>
+            <div class="arrow">
                 <img src="/img/arrowDown.svg" alt="arrow down">
             </div>
         </div>
     </div>
     <div class="projects-wrapper">
         <div class="projects-container">
-            <div class="row cols-lg-2 cols-md-2 cols-sm-1">
+            <div class="arrow-up">
+                <div class="arrowUp">
+                    <img src="/img/arrowUp.svg" alt="arrow">
+                </div>
+            </div>
+            <div class="about-container">
+                <div class="about-text text-center">
+                    <p>Born in Providence, Rhode Island</p>
+                    <p>Born in Providence, Rhode Island</p>
+                </div>
+                <div class="input-container">
+                    <div class="name-input input">
+                        <label for="name">Name*</label>
+                        <input placeholder="Your Name..." name="name" type="text">
+                    </div>
+                    <div class="email-input input">
+                        <label for="email">Email*</label>
+                        <input placeholder="Your Email..." name="email" type="text">
+                    </div>
+                    <div class="subject-input input">
+                        <label for="message">Message*</label>
+                        <input class="msg" placeholder="Your Message..." name="subject" type="text">
+                    </div>
+                    <div class="submit-btn">
+                        <button>Submit</button>
+                    </div>
 
+                </div>
             </div>
         </div>
     </div>
