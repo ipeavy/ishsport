@@ -1,3 +1,38 @@
-.project{
+.proj-wrapper {
+    width: 100%;
+    background-color: #212121;
+    position: relative;
+    z-index: 1000;
+
+    .proj-container {
+        padding: 0 2.5rem;
+        margin: 10rem auto 0 auto;
+        width: 100%;
+        max-width: 1368px;
+
+        p{
+            font-size: 2.5rem;
+            color: #eeeeee;
+            	font-family: acumin-pro, sans-serif;
+
+
+            &:nth-child(2){
+                padding-bottom: 6rem;
+                font-size: 1.6rem;
+                color: #9a9a9a;
+            }
+        }
+    }
+}
+
+.project {
     top: 9.3%;
+
+    @include breakpoint(medium) {
+        top: 10% !important;
+    }
+
+    .col{
+        padding: 0 .1em;
+    }
 }
