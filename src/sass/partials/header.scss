@@ -16,7 +16,7 @@
 		align-content: center;
 		justify-content: center;
 
-		@include breakpoint(medium){
+		@include breakpoint(medium) {
 			justify-content: space-between;
 		}
 
@@ -73,6 +73,174 @@
 			a {
 				padding: 1rem;
 			}
+		}
+
+		#sidebarMenu {
+			z-index: 102;
+			position: absolute;
+			overflow-y: hidden;
+			height: calc(100vh + 2rem);
+			padding-left: 2rem;
+			width: 100%;
+			top: -2rem;
+			transform: translateY(-1770px);
+			transition: transform 600ms ease-in-out;
+			background: #212121;
+
+			.mobile-nav-container{
+				ul{
+					list-style-type: none;
+					font-size: 2rem;
+					padding: 10rem 0 0 1rem;
+				}
+			}
+
+			.logo-container {
+				@include breakpoint(medium) {
+					padding-right: 1rem;
+				}
+			}
+
+
+			img {
+				width: 6rem;
+				height: 6rem;
+			}
+
+			.top {
+				font-size: 2.3rem;
+				letter-spacing: 3px;
+				margin-top: -0.2rem;
+			}
+
+			.bottom {
+				font-size: 1.8rem;
+				margin-top: -0.2rem;
+			}
+
+			@include breakpoint(medium) {
+				display: none;
+			}
+
+			.ul-container {
+				padding: 13rem 0;
+			}
+		}
+
+
+		.sidebarMenuInner {
+			margin: 0;
+			padding: 0;
+
+			li {
+				list-style: none;
+				color: #000000;
+				padding: .8rem 1.5rem;
+				cursor: pointer;
+
+				a {
+					color: #000000;
+					cursor: pointer;
+					text-decoration: none;
+					font-weight: bold;
+				}
+			}
+		}
+
+		input[type="checkbox"] {
+			&:checked {
+				~ {
+					#sidebarMenu {
+						transform: translateX(0px);
+
+					}
+				}
+			}
+		}
+
+		input[type=checkbox] {
+			transition: all 0.3s;
+			box-sizing: border-box;
+			display: none;
+
+			&:checked {
+				~ {
+					.sidebarIconToggle {
+						>.horizontal {
+							transition: all 0.3s;
+							box-sizing: border-box;
+							opacity: 0;
+						}
+
+						>.diagonal.part-1 {
+							transition: all 0.3s;
+							box-sizing: border-box;
+							transform: rotate(135deg);
+							margin-top: 8px;
+						}
+
+						>.diagonal.part-2 {
+							transition: all 0.3s;
+							box-sizing: border-box;
+							transform: rotate(-135deg);
+							margin-top: -9px;
+						}
+					}
+				}
+			}
+		}
+
+		.sidebarIconToggle {
+			transition: all 0.3s;
+			box-sizing: border-box;
+			cursor: pointer;
+			position: fixed;
+			z-index: 104;
+			height: 100%;
+			width: 100%;
+			top: 22px;
+			right: 15px;
+			height: 22px;
+			width: 22px;
+
+			@include breakpoint(medium) {
+				display: none;
+			}
+
+
+		}
+
+		.spinner {
+			transition: all 0.3s;
+			box-sizing: border-box;
+			position: absolute;
+			height: 3px;
+			width: 100%;
+			background-color: #ffffff;
+		}
+
+		.horizontal {
+			transition: all 0.3s;
+			box-sizing: border-box;
+			position: relative;
+			float: left;
+			margin-top: 3px;
+		}
+
+		.diagonal.part-1 {
+			position: relative;
+			transition: all 0.3s;
+			box-sizing: border-box;
+			float: left;
+		}
+
+		.diagonal.part-2 {
+			transition: all 0.3s;
+			box-sizing: border-box;
+			position: relative;
+			float: left;
+			margin-top: 3px;
+
 		}
 	}
 

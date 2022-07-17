@@ -15,12 +15,23 @@
 	padding: 0;
 }
 
-body{
+html{
+	background-color: #191919;
+}
+
+main {
+	background-color: #1F1F1F;
+	overflow-x: none;
+
+}
+
+body {
 	background-color: #1F1F1F;
 }
 
 html,
 body {
+	overflow-x: none;
 	width: 100%;
 	min-height: 100vh;
 	min-width: 320px;

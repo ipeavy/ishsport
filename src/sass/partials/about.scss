@@ -1,4 +1,13 @@
 .wrapper {
+    .name-container{
+        z-index: 3;
+    }
+    .name-about{
+        .ptag-name{
+            color: #ffffff;
+        }
+    }
+
     .about {
         background-image: url("/img/about4@2X.jpg");
         background-position: center;
