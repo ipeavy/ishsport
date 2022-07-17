@@ -9,12 +9,13 @@
     position: fixed;
     z-index: -99;
     padding: 0 .112rem;
-   
+
 
     .arrow {
         position: absolute;
         left: 43%;
         top: 70%;
+        right: 43%;
 
         @include breakpoint(medium) {
             top: 83%;
@@ -56,6 +57,7 @@
     width: 100%;
     background-color: #212121;
     position: absolute;
+    overflow-x: hidden;
     z-index: 1000;
     top: 80%;
 
@@ -67,12 +69,15 @@
         max-width: 1150px;
         margin: 0 auto;
         width: 100%;
+        overflow-x: hidden;
+    
+    
 
         .arrow-up {
             position: fixed;
             z-index: 99;
             right: 2rem;
-            
+
 
             .arrowUp {
                 background-color: #ffffff;
@@ -87,10 +92,10 @@
                     opacity: .1;
                 }
 
-                img{
+                img {
                     margin: 0 auto;
                 }
-                
+
             }
         }
 
@@ -100,6 +105,7 @@
 
         .img-container {
             margin: 1rem auto;
+            padding: 0 1em;
 
             img {
 
