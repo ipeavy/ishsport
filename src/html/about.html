@@ -12,9 +12,9 @@
     <div class="projects-wrapper">
         <div class="projects-container">
             <div class="arrow-up">
-                <div class="arrowUp">
+                <a href="#top"><div class="arrowUp">
                     <img src="/img/arrowUp.svg" alt="arrow">
-                </div>
+                </div></a>
             </div>
             <div class="about-container">
                 <div class="about-text text-center">
@@ -22,22 +22,16 @@
                     <p>Born in Providence, Rhode Island</p>
                 </div>
                 <div class="input-container">
-                    <div class="name-input input">
+                    <form class="input" action="https://formsubmit.co/ipeavy401@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="https://ishsportfolio.com/thankyou.html">
                         <label for="name">Name*</label>
-                        <input placeholder="Your Name..." name="name" type="text">
-                    </div>
-                    <div class="email-input input">
-                        <label for="email">Email*</label>
-                        <input placeholder="Your Email..." name="email" type="text">
-                    </div>
-                    <div class="subject-input input">
-                        <label for="message">Message*</label>
-                        <input class="msg" placeholder="Your Message..." name="subject" type="text">
-                    </div>
-                    <div class="submit-btn">
-                        <button>Submit</button>
-                    </div>
-
+                        <input placeholder="Your Name..." type="text" name="name" required>
+                        <label for="name">Email*</label>
+                        <input type="email" name="email" placeholder="Your Email Address..." required>
+                        <label for="name">Message*</label>
+                        <input class="msg" placeholder="Your Message..." type="text" name="message" required>
+                        <button class="submit-btn m-t-5 m-b-5" type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>

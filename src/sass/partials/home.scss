@@ -19,12 +19,6 @@
 
         @include breakpoint(medium) {
             top: 83%;
-            left: 47.2%;
-        }
-
-        @include breakpoint(large) {
-            top: 83%;
-            left: 48.5% !important;
         }
 
         img {
@@ -76,7 +70,11 @@
         .arrow-up {
             position: fixed;
             z-index: 99;
-            right: 2rem;
+            right: .23rem;
+
+            @include breakpoint(medium) {
+                right: 2rem;
+            }
 
 
             .arrowUp {

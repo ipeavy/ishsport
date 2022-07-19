@@ -15,40 +15,6 @@
         background-repeat: no-repeat;
     }
 
-    .projects-wrapper {
-
-        .projects-container {
-            .arrow-up {
-                position: fixed;
-                z-index: 99;
-                right: 2rem;
-
-
-                .arrowUp {
-                    background-color: #ffffff;
-                    border-radius: 50%;
-                    width: 6rem;
-                    height: 6rem;
-                    opacity: .6;
-                    align-items: center;
-                    display: flex;
-
-                    &:hover {
-                        opacity: .1;
-                    }
-
-                    img {
-                        margin: 0 auto;
-                    }
-
-                }
-            }
-
-        }
-
-
-
-    }
 }
 
 .about-container {
@@ -57,19 +23,15 @@
     width: 100%;
     max-width: 1368px;
 
-    .submit-btn {
-        width: 100%;
-        max-width: 500px;
-        margin: 2.5rem auto;
 
-        button {
+        .submit-btn {
             width: 10rem;
             height: 3.5rem;
-            color: #a9a9a9;
+            color: #000000;
             background-color: #ffffff;
             border-radius: .5rem;
         }
-    }
+    
 
 
     .about-text {
@@ -98,6 +60,7 @@
 
         .msg {
             height: 15rem;
+            padding-bottom: 12rem;
         }
 
 
