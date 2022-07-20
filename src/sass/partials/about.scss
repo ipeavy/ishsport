@@ -1,9 +1,10 @@
 .wrapper {
-    .name-container{
+    .name-container {
         z-index: 3;
     }
-    .name-about{
-        .ptag-name{
+
+    .name-about {
+        .ptag-name {
             color: #ffffff;
         }
     }
@@ -24,24 +25,40 @@
     max-width: 1368px;
 
 
-        .submit-btn {
-            width: 10rem;
-            height: 3.5rem;
-            color: #000000;
-            background-color: #ffffff;
-            border-radius: .5rem;
-        }
-    
+    .submit-btn {
+        width: 10rem;
+        height: 3.5rem;
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: .5rem;
+    }
+
 
 
     .about-text {
         p {
             color: #a9a9a9;
             font-size: 1.6rem;
+            letter-spacing: 1.34px;
+            text-align: center;
+            word-spacing: .7px;
+            max-width: 600px;
+            margin: 0 auto;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            line-height: 26px;
         }
     }
 
     .input {
+
+        max-width: 500px;
+        margin: 0 auto;
+
         label {
             color: #a9a9a9;
             width: 100%;
@@ -56,6 +73,7 @@
             border-radius: 5px;
             max-width: 50rem;
             margin: 0 auto;
+
         }
 
         .msg {
