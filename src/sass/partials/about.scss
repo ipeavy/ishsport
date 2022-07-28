@@ -66,6 +66,12 @@
             margin: 2.5rem auto .5rem auto;
         }
 
+        input,
+        select,
+        textarea {
+            color: #a9a9a9;
+        }
+
 
         input {
             background-color: transparent;
@@ -73,6 +79,8 @@
             border-radius: 5px;
             max-width: 50rem;
             margin: 0 auto;
+
+
 
         }
 
