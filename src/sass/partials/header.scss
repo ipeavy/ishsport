@@ -34,20 +34,16 @@
 				margin: 0;
 				list-style-type: none;
 
-				.highlight {
-					opacity: .5;
-
-					&:hover {
-						opacity: 1;
-					}
-				}
-
 				li {
 					font-size: 1.5rem;
 					font-weight: 600;
 					padding: 0 1rem;
 					cursor: pointer;
 					color: #ffffff;
+
+					&:hover{
+						opacity: .7;
+					}
 				}
 			}
 		}
@@ -61,6 +57,10 @@
 				font-size: 2.3rem;
 				font-weight: 600;
 				color: #ffffff;
+
+				&:hover{
+						opacity: .7;
+					}
 			}
 		}
 
@@ -74,6 +74,10 @@
 
 			a {
 				padding: 1rem;
+
+				&:hover{
+						opacity: .7;
+					}
 			}
 		}
 
