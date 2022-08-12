@@ -10,6 +10,10 @@
     z-index: -99;
     padding: 0 .112rem;
 
+    @include breakpoint(large) {
+        max-height: 768px;
+    }
+
 
     .arrow {
         position: absolute;

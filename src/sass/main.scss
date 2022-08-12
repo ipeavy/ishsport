@@ -54,7 +54,6 @@ body {
 	position: relative;
 	overflow-x: hidden;
 	color: $color-text;
-	background-color: $color-body;
 
 	@media (max-width: 768px) {
 		line-height: 1.2;
@@ -227,6 +226,10 @@ hr {
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
+
+	@include breakpoint(large){
+		max-height: 768px;
+	}
 }
 
 .page-content {
