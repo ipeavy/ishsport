@@ -19,6 +19,18 @@ function SmoothScrollTo(element) {
 	}
 }
 
+const gulp = require('gulp')
+const purgecss = require('gulp-purgecss')
+
+gulp.task('purgecss', () => {
+    return gulp.src('src/**/*.css')
+        .pipe(purgecss({
+            content: ['src/**/*.html']
+        }))
+        .pipe(gulp.dest('build/css'))
+})
+
+
 document.addEventListener('DOMContentLoaded', () => {
 	// DOM NODES
 	const ANCHORS = document.querySelectorAll('a');
