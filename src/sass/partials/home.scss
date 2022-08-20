@@ -63,6 +63,10 @@
         top: 100%;
     }
 
+    @include breakpoint(large) {
+        top: 80% !important;
+    }
+
     .projects-container {
         max-width: 1150px;
         margin: 0 auto;
@@ -84,6 +88,7 @@
 
             @include breakpoint(medium) {
                 right: 2rem;
+                bottom: 6rem;
             }
 
 

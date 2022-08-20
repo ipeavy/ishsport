@@ -7,6 +7,10 @@
 	bottom: 0;
 	z-index: 1001;
 
+	@include breakpoint(medium) {
+		padding: 1rem;
+	}
+
 	
 
 	.social {
