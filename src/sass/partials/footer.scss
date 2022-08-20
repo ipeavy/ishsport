@@ -7,14 +7,16 @@
 	bottom: 0;
 	z-index: 1001;
 
-	@include breakpoint(medium) {
-		display: none;
-	}
+	
 
 	.social {
 		text-align: center;
 		display: flex;
 		justify-content: center;
+
+		@include breakpoint(medium) {
+			display: none;
+		}
 	}
 
 	a {

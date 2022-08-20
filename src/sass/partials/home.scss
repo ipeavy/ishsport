@@ -73,9 +73,6 @@
         .proj-row{
             margin: 2rem auto 10rem auto;
 
-            @include breakpoint(medium) {
-                margin: 0 auto;
-            }
         }
     
     
