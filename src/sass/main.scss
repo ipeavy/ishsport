@@ -231,6 +231,30 @@ hr {
 	@include breakpoint(large){
 		max-height: 768px;
 	}
+
+	.text-bold{
+		font-size: 18px !important;
+	}
+
+	.img-text {
+                display: flex;
+                align-content: center;
+                flex-direction: column;
+                margin-top: -0.5rem;
+                height: 10rem;
+                background-color: #000000;
+                color: #fff;
+
+                .p-text {
+                    width: 300px;
+                    margin: auto;
+
+                    p {
+						font-size: 16px;
+                        margin: 0;
+                    }
+                }
+            }
 }
 
 .page-content {
