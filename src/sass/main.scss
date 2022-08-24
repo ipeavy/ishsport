@@ -20,7 +20,7 @@
 
 
 
-html{
+html {
 	background-color: #191919;
 }
 
@@ -228,33 +228,122 @@ hr {
 	margin: 0 auto;
 	position: relative;
 
-	@include breakpoint(large){
+	@include breakpoint(large) {
 		max-height: 768px;
 	}
 
-	.text-bold{
+	.projects-wrapper {
+		width: 100%;
+		background-color: #212121;
+		position: absolute;
+		overflow-x: hidden;
+		z-index: 1000;
+		top: 80%;
+
+		@include breakpoint(medium) {
+			top: 100%;
+		}
+
+		@include breakpoint(large) {
+			top: 80% !important;
+		}
+
+		.projects-container {
+			max-width: 1150px;
+			margin: 0 auto;
+			width: 100%;
+			overflow-x: hidden;
+
+
+
+
+
+
+			.arrow-up {
+				position: fixed;
+				z-index: 99;
+				right: .23rem;
+
+				@include breakpoint(medium) {
+					right: 2rem;
+					bottom: 6rem;
+				}
+
+
+				.arrowUp {
+					background-color: #ffffff;
+					border-radius: 50%;
+					width: 6rem;
+					height: 6rem;
+					opacity: .6;
+					align-items: center;
+					display: flex;
+
+					&:hover {
+						opacity: .1;
+					}
+
+					img {
+						margin: 0 auto;
+					}
+
+				}
+			}
+
+			.col {
+				padding: .2em;
+			}
+
+			.img-container {
+				margin: 1rem auto;
+				padding: 0 1em;
+
+				img {
+
+					transition: all ease-in-out 450ms;
+
+					&:hover {
+						background-color: #000000;
+						opacity: .5;
+					}
+				}
+
+
+			}
+		}
+	}
+
+	.proj-row {
+		margin: 2rem auto 10rem auto !important;
+
+	}
+
+	.text-bold {
 		font-size: 18px !important;
 	}
 
 	.img-text {
-                display: flex;
-                align-content: center;
-                flex-direction: column;
-                margin-top: -0.5rem;
-                height: 10rem;
-                background-color: #000000;
-                color: #fff;
+		display: flex;
+		align-content: center;
+		flex-direction: column;
+		margin-top: -0.5rem;
+		height: 10rem;
+		background-color: #000000;
+		color: #fff;
 
-                .p-text {
-                    width: 300px;
-                    margin: auto;
+		.p-text {
+			width: 300px;
+			margin: auto;
+			display: flex;
+			align-content: center;
+			flex-direction: column;
 
-                    p {
-						font-size: 16px;
-                        margin: 0;
-                    }
-                }
-            }
+			p {
+				font-size: 16px;
+				margin: 0;
+			}
+		}
+	}
 }
 
 .page-content {
