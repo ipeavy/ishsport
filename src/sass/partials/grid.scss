@@ -20,7 +20,7 @@ $breakpoints_reverse: (
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 calc(-1 * $row_gap / 2);
+	margin: 0 auto 11rem auto;
 	&.fill > .col {
 		flex: 1 0 auto;
 		&.fill {
