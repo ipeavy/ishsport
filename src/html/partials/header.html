@@ -13,6 +13,18 @@
 		content="My name is Ishmael Peavy. A self-taught Web/Html email developer located in Providence, Rhode Island. My main hobbies are hiking, car meets, and watching tech videos. I love communicating with people and making new acquaintances. life is all about growing so I'm willing to expand my knowledge of coding.">
 	<meta name="keywords" content="ishsportfolio, ishmael peavy, ish, developer, html, email dev, font end developer ">
 
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CQH93T06YR"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-CQH93T06YR');
+	</script>
+
+
 	<!-- notch color -->
 	<meta name="theme-color" content="#191919">
 
@@ -46,7 +58,7 @@
 		<!-- header container -->
 		<div class="container">
 			<!-- pages -->
-			<div class="contacts">
+			<div id="navbar" class="contacts">
 				<ul>
 					<li onclick="location.href='/index.html'">Work</li>
 					<li onclick="location.href='/about.html'">About / Contact</li>
@@ -78,7 +90,7 @@
 			<!-- social container -->
 			<div class="social">
 				<!-- github icon -->
-				<a target="_blank" href="https://github.com/ipeavy"><img src="/img/github.svg" alt="github"></a>
+				<a id="profile-link" target="_blank" href="https://github.com/ipeavy"><img src="/img/github.svg" alt="github"></a>
 				<a target="_blank" href="https://twitter.com/IshmaelPeavy"><img src="/img/twitter.svg"
 						alt="twitter"></a>
 				<a target="_blank" href="https://www.linkedin.com/in/ishmael-peavy-b591a9170/"><img
