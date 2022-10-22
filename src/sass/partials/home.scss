@@ -16,6 +16,8 @@
 
 
     .hireBtn{
+        padding: 1rem 0;
+        font-size: 1.7rem;
         text-decoration: underline;
         @include breakpoint(medium) {
             display: none;
