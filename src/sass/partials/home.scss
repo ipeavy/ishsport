@@ -15,6 +15,14 @@
     }
 
 
+    .hireBtn{
+        text-decoration: underline;
+        @include breakpoint(medium) {
+            display: none;
+        }
+    }
+
+
     .arrow {
         position: absolute;
         left: 43%;
