@@ -221,7 +221,17 @@ hr {
 	margin: 1em 0;
 }
 
+
+
 /* ==========  Custom  ========== */
+.wrapper{
+	.proj-wrapper{
+		
+	}
+}
+
+
+
 .container {
 	display: block;
 	width: 100%;
@@ -231,6 +241,7 @@ hr {
 	@include breakpoint(large) {
 		max-height: 768px;
 	}
+	
 
 	.projects-wrapper {
 		width: 100%;
