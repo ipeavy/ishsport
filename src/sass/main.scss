@@ -245,7 +245,7 @@ hr {
 		position: absolute;
 		overflow-x: hidden;
 		z-index: 1000;
-		top: 80%;
+		top: 70%;
 
 		@include breakpoint(medium) {
 			top: 82%;
