@@ -47,12 +47,12 @@
             transition: all ease-in-out 450ms;
 
             @include breakpoint(medium) {
-                height: 250px;
+                // height: 250px;
 
             }
 
             @include breakpoint(large) {
-                height: 400px;
+                // height: 400px;
 
             }
 
