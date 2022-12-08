@@ -31,9 +31,6 @@
         top: 70%;
         right: 43%;
 
-        @include breakpoint(medium) {
-            top: 83%;
-        }
 
         img {
             width: 4rem;
